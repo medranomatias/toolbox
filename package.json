@@ -4,6 +4,7 @@
   "description": "Challenge de skill técnico",
   "main": "index.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "npx mocha"
   },
   "repository": {

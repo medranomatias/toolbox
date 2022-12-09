@@ -13,4 +13,9 @@ router.get('/files/data', (req, res, next) => {
     })
 })
 
+router.get('/', function (req, res) {
+    console.log('estoy aca')
+    res.render('index')
+});
+
 module.exports = router

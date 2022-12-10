@@ -47,9 +47,12 @@ class FileServer {
         this.externFileServer = externFileServer
     }
 
-    async listFiles() {
+    async listFiles(fileName = '') {
         const externServer = this.externFileServer
-        const fileNames = await externServer.listFiles()        
+        let fileNames = await externServer.listFiles()        
+        if(fileName) {
+            fileNames = fileNames.filter(name => name == fileName)
+        }
         const files = []        
         for(const fileName of fileNames) {            
             files.push({

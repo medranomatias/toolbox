@@ -13,6 +13,14 @@ router.get('/files/data', (req, res, next) => {
     })
 })
 
+router.get('/files/list', (req, res, next) => {
+    const server = new rest.ExternalFileServer()    
+    server.listFiles().then(files => {
+        res.set('Content-Type', 'application/json; charset=utf-8');        
+        res.json(files)
+    })
+})
+
 router.get('/', function (req, res) {
     res.render('index')
 });

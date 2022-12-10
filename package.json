@@ -16,6 +16,11 @@
   "bugs": {
     "url": "https://github.com/medranomatias/toolbox/issues"
   },
+  "standard": {
+    "env": [ 
+      "mocha" 
+    ]
+  },
   "homepage": "https://github.com/medranomatias/toolbox#readme",
   "devDependencies": {
     "@types/chai": "^4.3.4",
@@ -23,7 +28,8 @@
     "@types/mocha": "^10.0.1",
     "chai": "^4.3.7",
     "express": "^4.18.2",
+    "hbs": "^4.2.0",
     "mocha": "^10.1.0",
-    "hbs": "^4.2.0"
+    "standard": "^17.0.0"
   }
 }

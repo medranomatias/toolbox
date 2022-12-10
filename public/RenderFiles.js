@@ -54,7 +54,7 @@ class RenderFiles extends React.Component {
     )
   }
 }
-
+// eslint-disable-next-line
 ReactDOM.render(
   <RenderFiles />,
   document.getElementById('root')
